@@ -15,5 +15,6 @@ class Cachorro extends Animal {
 
 let a = new Animal("Animal qualquer");
 let c = new Cachorro("Rufos");
+
 a.som();
 c.som();
