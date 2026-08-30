@@ -10,7 +10,21 @@ class Animal {
     }
 }
 
+class Cachorro extends Animal {
+    constructor(nome) {
+        super(nome);
+        console.log(this.nome + ': latido de cachorro.');
+    }
+}
+
 let a = new Animal("Animal qualquer");
-a.som(); a.setNome = "Rufos";
+a.som(); 
+a.setNome = "Rufos";
 console.log("Nome: " + a.getNome + "");
 a.som();
+
+let b = new Cachorro("Cosmos");
+b.som(); 
+b.setNome = "Gordom";
+console.log("Nome: " + b.getNome + "");
+b.som();
