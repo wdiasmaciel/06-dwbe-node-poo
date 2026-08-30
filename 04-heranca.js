@@ -9,10 +9,10 @@ class Animal {
         return this.nome;
     }
     get exibir() {
-        console.log("Nome: " + this.getNome + "\n");
+        console.log('Nome: ' + this.getNome + '.');
     }
     som() {
-        console.log(this.getNome + ': som de animal.');
+        console.log(this.getNome + ': som de animal.\n');
     }
 }
 
@@ -24,17 +24,17 @@ class Cachorro extends Animal {
 }
 
 let a = new Animal("Animal qualquer");
-a.som();
 a.exibir;
+a.som();
 
 a.setNome = "Rufos";
-a.som();
 a.exibir;
+a.som();
 
 let b = new Cachorro("Cosmos");
-b.som();
 b.exibir;
+b.som();
 
 b.setNome = "Gordom";
-b.som();
 b.exibir;
+b.som();
