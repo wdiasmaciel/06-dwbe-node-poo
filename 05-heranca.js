@@ -39,4 +39,4 @@ cachorro.comida("Ração");
 cachorro.setNome = "Gordom";
 cachorro.exibir();
 cachorro.som();
-cachorro.comida("Leite");
+cachorro.comida("Osso");
