@@ -1,12 +1,13 @@
 class Animal {
+    #nome; // Atributo privado.
     constructor(n) {
-        this.nome = n;
+        this.#nome = n;
     }
     set setNome(n) {
-        this.nome = n;
+        this.#nome = n;
     }
     get getNome() {
-        return this.nome;
+        return this.#nome;
     }
     get exibir() {
         console.log('Nome: ' + this.getNome + '.');
@@ -19,7 +20,7 @@ class Animal {
 class Cachorro extends Animal {
     constructor(nome) {
         super(nome);
-        console.log(this.nome + ': latido de cachorro.');
+        console.log(this.getNome + ': latido de cachorro.');
     }
 }
 
