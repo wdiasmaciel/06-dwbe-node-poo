@@ -58,7 +58,7 @@ const animal5 = new Animal('Animal Genérico');
 const animais = [animal1, animal2, animal3, animal5];
 
 // O mesmo método som() é chamad, mas cada objeto responde de forma diferente:
-console.log('Chamando som() para cada animal:\n');
+console.log('Chamando .som() para cada animal:\n');
 
 animais.forEach((animal) => {
     animal.exibir();
