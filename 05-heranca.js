@@ -10,7 +10,7 @@ class Animal {
     } comida = (c) => {
         console.log(`Comida do animal: ${c}.`);
     }
-} var a = new Animal("Animal qualquer");
+} let a = new Animal("Animal qualquer");
 a.som();
 a.comida("Ração"); a.setNome = "Rufos";
 console.log(`Nome: ${a.getNome} `);

@@ -12,7 +12,8 @@ class Cachorro extends Animal {
         console.log(this.nome + ": latido de cachorro.");
     }
 }
-var a = new Animal("Animal qualquer");
-var c = new Cachorro("Rufos");
+
+let a = new Animal("Animal qualquer");
+let c = new Cachorro("Rufos");
 a.som();
 c.som();

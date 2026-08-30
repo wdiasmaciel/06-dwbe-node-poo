@@ -9,7 +9,7 @@ class Animal {
         console.log(this.getNome + ': som de animal.');
     }
 }
-var a = new Animal("Animal qualquer");
+let a = new Animal("Animal qualquer");
 a.som(); a.setNome = "Rufos";
 console.log("Nome: " + a.getNome + "");
 a.som();
