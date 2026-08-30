@@ -32,8 +32,8 @@ animal.exibir;
 animal.som();
 
 let cachorro = new Cachorro("Cosmos");
-cachorro.som();
 cachorro.exibir;
+cachorro.som();
 
 cachorro.setNome = "Gordom";
 cachorro.exibir;
