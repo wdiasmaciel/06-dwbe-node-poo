@@ -20,6 +20,7 @@ class Cachorro extends Animal {
 }
 
 let a = new Animal("Animal qualquer");
+console.log(`Nome: ${a.getNome}`);
 a.som();
 a.comida("Ração"); 
 a.setNome = "Rufos";
@@ -28,6 +29,7 @@ a.som();
 a.comida("Leite");
 
 let b = new Animal("Cosmos");
+console.log(`Nome: ${b.getNome}`);
 b.som();
 b.comida("Ração"); 
 b.setNome = "Gordom";
