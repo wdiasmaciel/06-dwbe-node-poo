@@ -1,11 +1,17 @@
 class Animal {
     constructor(n) {
         this.nome = n;
-    } set setNome(n) {
+    }
+    set setNome(n) {
         this.nome = n;
-    } get getNome() {
+    }
+    get getNome() {
         return this.nome;
-    } som() {
+    }
+    get exibir() {
+        console.log("Nome: " + this.getNome + "\n");
+    }
+    som() {
         console.log(this.getNome + ': som de animal.');
     }
 }
@@ -18,17 +24,17 @@ class Cachorro extends Animal {
 }
 
 let a = new Animal("Animal qualquer");
-a.som(); 
-console.log("Nome: " + a.getNome + "\n");
+a.som();
+a.exibir;
 
 a.setNome = "Rufos";
 a.som();
-console.log("Nome: " + a.getNome + "\n");
+a.exibir;
 
 let b = new Cachorro("Cosmos");
-b.som(); 
-console.log("Nome: " + b.getNome + "\n");
+b.som();
+b.exibir;
 
 b.setNome = "Gordom";
 b.som();
-console.log("Nome: " + b.getNome + "\n");
+b.exibir;
