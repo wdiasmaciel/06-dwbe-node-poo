@@ -9,8 +9,8 @@ class Animal {
     get getNome() {
         return this.#nome;
     } 
-    som = () => console.log(`${this.getNome}: som de animal.`);
     exibir = () => console.log(`Nome: ${this.getNome}.`);   
+    som = () => console.log(`${this.getNome}: som de animal.`);
     comida = (c) => console.log(`Comida do animal: ${c}.\n`);
 } 
 
