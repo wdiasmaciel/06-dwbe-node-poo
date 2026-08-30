@@ -6,13 +6,13 @@ class Animal {
     } get getNome() {
         return this.nome;
     } som() {
-        console.log(`${this.getNome}: som de animal.<br>`);
+        console.log(`${this.getNome}: som de animal.`);
     } comida = (c) => {
-        console.log(`Comida do animal: ${c}.<br>`);
+        console.log(`Comida do animal: ${c}.`);
     }
 } var a = new Animal("Animal qualquer");
 a.som();
 a.comida("Ração"); a.setNome = "Rufos";
-console.log(`Nome: ${a.getNome} <br>`);
+console.log(`Nome: ${a.getNome} `);
 a.som();
 a.comida("Leite");

@@ -3,13 +3,13 @@ class Animal {
         this.nome = nome;
     }
     som() {
-        console.log(this.nome + ': som de animal.<br>');
+        console.log(this.nome + ': som de animal.');
     }
 }
 class Cachorro extends Animal {
     som() {
         super.som();
-        console.log(this.nome + ': latido de cachorro.<br>');
+        console.log(this.nome + ': latido de cachorro.');
     }
 }
 var a = new Animal("Animal qualquer");

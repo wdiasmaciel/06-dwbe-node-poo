@@ -6,10 +6,10 @@ class Animal {
     } get getNome() {
         return this.nome;
     } som() {
-        console.log(this.getNome + ': som de animal.<br>');
+        console.log(this.getNome + ': som de animal.');
     }
 }
 var a = new Animal("Animal qualquer");
 a.som(); a.setNome = "Rufos";
-console.log("Nome: " + a.getNome + "<br>");
+console.log("Nome: " + a.getNome + "");
 a.som();

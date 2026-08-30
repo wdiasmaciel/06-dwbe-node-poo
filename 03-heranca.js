@@ -1,14 +1,14 @@
 class Animal {
     constructor(nome) {
         this.nome = nome;
-        console.log(this.nome + ': som de animal.<br>');
+        console.log(this.nome + ': som de animal.');
     }
 }
 
 class Cachorro extends Animal {
     constructor(nome) {
         super(nome);
-        console.log(this.nome + ': latido de cachorro.<br>');
+        console.log(this.nome + ': latido de cachorro.');
     }
 }
 
