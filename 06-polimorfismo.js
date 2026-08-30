@@ -18,7 +18,7 @@ class Animal {
     }
 
     exibir() {
-        console.log('Nome: ' + this.nome);
+        console.log('Nome: ' + this.nome + '.');
     }
 }
 
