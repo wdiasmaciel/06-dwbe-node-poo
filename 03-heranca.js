@@ -12,6 +12,6 @@ class Cachorro extends Animal {
     }
 }
 
-let a = new Animal("Animal qualquer");
-let b = new Cachorro("Rufos");
+let animal = new Animal("Animal qualquer");
+let cachorro = new Cachorro("Rufos");
 

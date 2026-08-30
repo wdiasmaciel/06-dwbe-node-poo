@@ -23,18 +23,18 @@ class Cachorro extends Animal {
     }
 }
 
-let a = new Animal("Animal qualquer");
-a.exibir;
-a.som();
+let animal = new Animal("Animal qualquer");
+animal.exibir;
+animal.som();
 
-a.setNome = "Rufos";
-a.exibir;
-a.som();
+animal.setNome = "Rufos";
+animal.exibir;
+animal.som();
 
-let b = new Cachorro("Cosmos");
-b.exibir;
-b.som();
+let cachorro = new Cachorro("Cosmos");
+cachorro.som();
+cachorro.exibir;
 
-b.setNome = "Gordom";
-b.exibir;
-b.som();
+cachorro.setNome = "Gordom";
+cachorro.exibir;
+cachorro.som();

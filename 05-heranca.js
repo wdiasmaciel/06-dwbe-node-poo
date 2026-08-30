@@ -19,20 +19,20 @@ class Cachorro extends Animal {
     }
 }
 
-let a = new Animal("Animal qualquer");
-console.log(`Nome: ${a.getNome}`);
-a.som();
-a.comida("Ração"); 
-a.setNome = "Rufos";
-console.log(`Nome: ${a.getNome}`);
-a.som();
-a.comida("Leite");
+let animal = new Animal("Animal qualquer");
+console.log(`Nome: ${animal.getNome}`);
+animal.som();
+animal.comida("Ração"); 
+animal.setNome = "Rufos";
+console.log(`Nome: ${animal.getNome}`);
+animal.som();
+animal.comida("Leite");
 
-let b = new Animal("Cosmos");
-console.log(`Nome: ${b.getNome}`);
-b.som();
-b.comida("Ração"); 
-b.setNome = "Gordom";
-console.log(`Nome: ${b.getNome}`);
-b.som();
-b.comida("Leite");
+let cachorro = new Animal("Cosmos");
+console.log(`Nome: ${cachorro.getNome}`);
+cachorro.som();
+cachorro.comida("Ração"); 
+cachorro.setNome = "Gordom";
+console.log(`Nome: ${cachorro.getNome}`);
+cachorro.som();
+cachorro.comida("Leite");
