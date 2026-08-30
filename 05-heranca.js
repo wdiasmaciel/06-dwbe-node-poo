@@ -1,38 +1,42 @@
 class Animal {
+    #nome; // Atributo privado.
     constructor(n) {
-        this.nome = n;
-    } set setNome(n) {
-        this.nome = n;
-    } get getNome() {
-        return this.nome;
-    } som() {
-        console.log(`${this.getNome}: som de animal.`);
-    } comida = (c) => {
-        console.log(`Comida do animal: ${c}.`);
-    }
+        this.#nome = n;
+    } 
+    set setNome(n) {
+        this.#nome = n;
+    } 
+    get getNome() {
+        return this.#nome;
+    } 
+    som = () => console.log(`${this.getNome}: som de animal.`);
+    exibir = () => console.log(`Nome: ${this.getNome}.`);   
+    comida = (c) => console.log(`Comida do animal: ${c}.\n`);
 } 
 
 class Cachorro extends Animal {
     constructor(nome) {
         super(nome);
-        console.log(this.nome + ': latido de cachorro.');
+        console.log(`${this.getNome}: latido de cachorro.`);
     }
 }
 
 let animal = new Animal("Animal qualquer");
-console.log(`Nome: ${animal.getNome}`);
+animal.exibir();
 animal.som();
 animal.comida("Ração"); 
+
 animal.setNome = "Rufos";
-console.log(`Nome: ${animal.getNome}`);
+animal.exibir();
 animal.som();
 animal.comida("Leite");
 
-let cachorro = new Animal("Cosmos");
-console.log(`Nome: ${cachorro.getNome}`);
+let cachorro = new Cachorro("Cosmos");
+cachorro.exibir();
 cachorro.som();
 cachorro.comida("Ração"); 
+
 cachorro.setNome = "Gordom";
-console.log(`Nome: ${cachorro.getNome}`);
+cachorro.exibir();
 cachorro.som();
 cachorro.comida("Leite");
